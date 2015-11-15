@@ -13,6 +13,7 @@
 		E7C451091BF85734009D6DE9 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C451081BF85734009D6DE9 /* Curry.framework */; };
 		E7C4510B1BF857F9009D6DE9 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4510A1BF857F9009D6DE9 /* Nimble.framework */; };
 		E7C4510D1BF85806009D6DE9 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4510C1BF85806009D6DE9 /* Quick.framework */; };
+		E7C451101BF85CB0009D6DE9 /* RGBUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C4510F1BF85CB0009D6DE9 /* RGBUIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		E7C451081BF85734009D6DE9 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "Carthage/Checkouts/Curry/build/Debug-iphoneos/Curry.framework"; sourceTree = "<group>"; };
 		E7C4510A1BF857F9009D6DE9 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		E7C4510C1BF85806009D6DE9 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Checkouts/Quick/build/Debug/Quick.framework; sourceTree = "<group>"; };
+		E7C4510F1BF85CB0009D6DE9 /* RGBUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBUIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				E7C450F11BF84F85009D6DE9 /* RGB.h */,
 				E7C450F31BF84F85009D6DE9 /* Info.plist */,
+				E7C4510F1BF85CB0009D6DE9 /* RGBUIColor.swift */,
 			);
 			path = RGB;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C451101BF85CB0009D6DE9 /* RGBUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +332,7 @@
 		E7C451031BF84F85009D6DE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -338,12 +343,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtbot.RGB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		E7C451041BF84F85009D6DE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
