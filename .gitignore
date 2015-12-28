@@ -10,6 +10,9 @@
 *.pbxuser
 xcuserdata
 *.xccheckout
+*.xcuserstate
+*.xcscmblueprint
+
 
 # Build products
 build/
