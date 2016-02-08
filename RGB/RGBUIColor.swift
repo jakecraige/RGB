@@ -6,9 +6,9 @@ public func RGBUIColor(red red: Int, green: Int, blue: Int) -> UIColor {
 
 private func createColor(red: Int, green: Int, blue: Int) -> UIColor {
     return UIColor(
-        red: CGFloat(red/255),
-        green: CGFloat(green/255),
-        blue: CGFloat(blue/155),
+        red: CGFloat(red)/255,
+        green: CGFloat(green)/255,
+        blue: CGFloat(blue)/255,
         alpha: 1
     )
 }
